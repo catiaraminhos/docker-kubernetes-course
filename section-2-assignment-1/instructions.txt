@@ -17,6 +17,18 @@ docker run -i 9dd45ac3deed
 3) Re-create both containers and assign names to both containers.
 Use these names to stop and restart both containers.
 
+node-app:
+docker stop f0701d34ca26
+docker run --name node-app-assigment-1 -p 3000:3000 f0701d34ca26
+docker stop node-app-assigment-1
+docker start node-app-assigment-1
+
+python-app:
+docker stop 9dd45ac3deed
+docker run --name python-app-assigment-1 -i 9dd45ac3deed
+docker stop python-app-assigment-1
+docker start -ia python-app-assigment-1
+
 4) Clean up (remove) all stopped (and running) containers, 
 clean up all created images.
 
