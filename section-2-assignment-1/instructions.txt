@@ -54,4 +54,4 @@ node-app:
 docker run --name node-app-assigment-1 -p 3000:3000 --rm node-app-assignment-1:latest
 
 python-app:
-docker run --name python-app-assigment-1 -i --rm python-app-assignment-1:latest
+docker run --name python-app-assigment-1 -it --rm python-app-assignment-1:latest
