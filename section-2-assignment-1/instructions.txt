@@ -8,6 +8,12 @@ docker build .
 2) Launch a container for each created image, making sure, 
 that the app inside the container works correctly and is usable.
 
+node-app:
+docker run -p 3000:3000 f0701d34ca26
+
+python-app:
+docker run -i 9dd45ac3deed
+
 3) Re-create both containers and assign names to both containers.
 Use these names to stop and restart both containers.
 
